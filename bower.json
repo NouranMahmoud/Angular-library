@@ -1,0 +1,22 @@
+{
+  "name": "angular-library",
+  "description": "Library test",
+  "main": "index.js",
+  "authors": [
+    "Nouran Mahmoud"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angualar",
+    "library"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
