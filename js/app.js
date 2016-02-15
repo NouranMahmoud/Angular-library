@@ -3,11 +3,13 @@
       templateUrl: '/templates/books/index.html',
       controller: 'indexController',
       controllerAs: 'indexCtrl'
-    });
+    })
     // .when('/books',{redirectTo: '/'})
-    // .when('/book/:id', {
-    //   templateUrl: '/templates/books/show.html'
-    // })
+    .when('/book/:id', {
+      templateUrl: '/templates/books/show.html',
+      controller: 'showController',
+      controllerAs: 'showCtrl'
+    });
     // .when('/ ', {
     //   templateUrl: '/templates/books/new.html'
     // })
