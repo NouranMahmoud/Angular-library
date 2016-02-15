@@ -1,4 +1,4 @@
-angular.module('library').service('ServerDataModel', function ServerDataModel() {
+angular.module('library', ['ngRoute', 'ngMock']).service('ServerDataModel', function ServerDataModel() {
     this.data = [
         {
             bookid: 1,
