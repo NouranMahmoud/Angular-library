@@ -2,9 +2,9 @@
   <div class="col-lg-12 text-center quote text-muted">
     <h2>“There is no friend as loyal as a book.”</h2>
   </div>
-  <div class="col-lg-4">
-    <img class="img-square" ng-src="{{queryResults.image}}" alt="Generic placeholder image" width="140" height="190">
-    <h4><a href="#">{{queryResults.title}}</a></h4>
-    <p><b>by</b> <span class="text-muted">{{queryResults.author}}</span></p>
+  <div class="col-lg-4"  ng-repeat="book in books">
+    <img class="img-square" ng-src="{{book.image}}" alt="Generic placeholder image" width="140" height="190">
+    <h4><a href="#">{{book.title}}</a></h4>
+    <p><b>by</b> <span class="text-muted">{{book.author}}</span></p>
   </div><!-- /.col-lg-4 -->
 </div><!-- /.row -->
