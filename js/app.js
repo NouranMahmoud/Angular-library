@@ -10,11 +10,11 @@
       controller: 'showController',
       controllerAs: 'showCtrl'
     })
-    .when('/new ', {
+    .when('/new', {
       templateUrl: '/templates/books/new.html',
       controller: 'createController',
       controllerAs: 'createCtrl'
-    })
+    });
     // .otherwise({
     //   redirectTo: '/'
     // });
