@@ -14,6 +14,11 @@
       templateUrl: '/templates/books/new.html',
       controller: 'createController',
       controllerAs: 'createCtrl'
+    })
+    .when('/edit/:id', {
+      templateUrl: '/templates/books/edit.html',
+      controller: 'editController',
+      controllerAs: 'editCtrl'
     });
     // .otherwise({
     //   redirectTo: '/'
