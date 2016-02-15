@@ -3,7 +3,7 @@
   .controller('indexController', indexController);
   
   function indexController ($scope){
-    $scope.books = library_books;
+    $scope.library_books = library_books;
     $scope.queryHttp = function() {
       HttpService.query().then(function(response) {
           $scope.queryResults = response.data;
@@ -14,7 +14,7 @@
 })();
 
 window.library_books= [
-    {
+    [{
       id: 1,
       author: "Álvaro Enrigue",
       title: "Sudden Death",
@@ -49,8 +49,8 @@ window.library_books= [
         '(over 90,000 copies sold and translated into 15 languages) is a '+
         'fun, accessible, and practical guide that takes the mystery and '+
         'confusion out of developing new ideas.'
-    },
-    {
+    }],
+    [{
       id: 4,
       author: "by Álvaro Enrigue",
       title: "Sudden Death",
@@ -85,4 +85,4 @@ window.library_books= [
         '(over 90,000 copies sold and translated into 15 languages) is a '+
         'fun, accessible, and practical guide that takes the mystery and '+
         'confusion out of developing new ideas.'
-    }];
+    }]];

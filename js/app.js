@@ -9,10 +9,12 @@
       templateUrl: '/templates/books/show.html',
       controller: 'showController',
       controllerAs: 'showCtrl'
-    });
-    // .when('/ ', {
-    //   templateUrl: '/templates/books/new.html'
-    // })
+    })
+    .when('/new ', {
+      templateUrl: '/templates/books/new.html',
+      controller: 'createController',
+      controllerAs: 'createCtrl'
+    })
     // .otherwise({
     //   redirectTo: '/'
     // });
