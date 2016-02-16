@@ -3,10 +3,13 @@
   .controller('editController', editController)
 
   function editController($scope, $location, $routeParams){
-    $scope.book = library_books[$routeParams.id-1]
+    $scope.book = getSelectedBook($routeParams.id)
     $scope.updateBook = function(model){
-      model.id = $routeParams.id
-      library_books[model.id-1] = model;
+      library_books.forEach(function(book, index){
+        if(book.id == $routeParams.id){
+          library_books[index] = model;
+        }
+      });
       $location.path('/book/'+model.id);
     };
   }

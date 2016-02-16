@@ -2,9 +2,8 @@
   angular.module('library')
   .controller('indexController', indexController);
   
-  function indexController ($scope){
+  function indexController ($scope, $location){
     $scope.books = library_books;
-    
   }
 
 })();
@@ -25,7 +24,7 @@ window.library_books= [
     {
       id: 2,
       author: "Barbara Goldsmith",
-      title: "Obsessive Genius: The Inner World of Marie Curie",
+      title: "The Inner World of Marie Curie",
       // publish_date: new Date(2014, 4, 7),
       image: 'https://d.gr-assets.com/books/1348693726l/459134.jpg',
       description: 'The best-selling, "excellent . . . poignant—and scientifically '+
@@ -61,7 +60,7 @@ window.library_books= [
     {
       id: 5,
       author: "Barbara Goldsmith",
-      title: "Obsessive Genius: The Inner World of Marie Curie",
+      title: "The Inner World of Marie Curie",
       // publish_date: new Date(2014, 4, 7),
       image: 'https://d.gr-assets.com/books/1348693726l/459134.jpg',
       description: 'The best-selling, "excellent . . . poignant—and scientifically '+
