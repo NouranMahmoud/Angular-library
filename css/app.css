@@ -1,9 +1,22 @@
+@import url('helper.css');
 body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .content {
   margin-top: 100px;
+}
+
+/* navbar */
+.navbar {
+  background-color: rgba(0, 150, 136, 0.66) !important;
+}
+
+.navbar a{
+  color: white !important;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: #6CD8CD !important;
 }
 
 /* content CONTENT
@@ -26,11 +39,6 @@ body {
 /* books
 ------------------------- */
 
-.book-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the content headings */
 .book-heading {
   font-weight: 300;
   line-height: 1;
@@ -49,11 +57,11 @@ body {
 
 @media (min-width: 992px) {
   .book-heading {
-    margin-top: 120px;
+    margin-top: 20px;
   }
 }
 
-/* quote */
+/* ====  quote ====== */
 .quote {
   margin-bottom: 100px;
 }
@@ -63,5 +71,13 @@ h4 a{
   
 }
 h4 a:focus, h4 a:hover{
-    color: #77777B;
-  }
+  color: #77777B;
+}
+
+/** Custom Forms style **/
+.ng-valid .ng-dirty{
+  border-color: green;
+}
+.ng-invalid .ng-dirty{
+  border-color: red;
+}

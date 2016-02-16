@@ -1,0 +1,20 @@
+/* helper classes */
+.bg-green {
+  background-color: #57BAB0;
+}
+.white {
+  color: white;
+}
+.bg-red {
+  background-color: #FF7668;
+}
+.bg-red:hover, .bg-red:focus{
+  background-color: #F44336;
+}
+
+.bg-green:hover, .bg-green:focus{
+  background-color: #6CD8CD;
+}
+.white:hover, .white:focus{
+  color: white;
+}
