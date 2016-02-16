@@ -4,8 +4,8 @@
     <p>By <span class="text-muted"><b>{{book.author}}</b></span><p>
     <p class="lead">{{book.description}}</p>
   
-  <button type='button' class="btn btn-danger">Delete</button>
-  <button type='button' ng-click="redirectToEdit()" class="btn btn-success">Edit</button>
+  <button type='button' ng-click="remove()" class="btn bg-red white">Delete</button>
+  <button type='button' ng-click="redirectToEdit()" class="btn bg-green white">Edit</button>
   </div>
   <div class="col-md-5">
     <img class="book-image img-responsive center-block" ng-src="{{book.image}}" alt="Generic placeholder image">
